@@ -17,7 +17,7 @@ class Docker implements Serializable {
         script.withCredentials([usernamePassword(credentialsId: 'Nexus_Credientials', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
             script.sh "echo script.$PASS | docker login -u script.$USER --password-stdin 192.168.206.129:8083"
     }
-    def dockerPush(String imageName){
+    def dockerPush (String imageName) {
         script.sh "docker tag $imageName 192.168.206.129:8081/repository/$imageName"
         script.sh "docker push 192.168.206.129:8083/repository/$imageName"
     } 
