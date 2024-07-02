@@ -8,7 +8,7 @@ class Docker implements Serializable {
     Docker(script){
         this.script = script 
     }
-
+    
     def buildDockerImage (String imageName) {
         script.echo "building the image ......"
         script.sh "docker build -t $imageName ."
