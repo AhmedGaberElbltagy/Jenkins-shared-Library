@@ -8,4 +8,3 @@ def call(String imageName){
     }
 }
 
-#java-maven-app
