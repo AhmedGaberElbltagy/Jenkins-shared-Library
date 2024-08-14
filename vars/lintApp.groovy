@@ -2,5 +2,5 @@
 
 def call(){
     echo " testing the application ...."
-    sh './gradlew test'
+    sh './gradlew checkstyleMain checkstyleTest --warning-mode all'
 }

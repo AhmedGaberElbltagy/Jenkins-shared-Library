@@ -2,5 +2,5 @@
 
 def call(){
     echo "building the application ...."
-    sh './gradlew clean build'
+     sh './gradlew bootJar'
 }
