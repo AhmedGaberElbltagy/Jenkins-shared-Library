@@ -15,7 +15,7 @@ class Docker implements Serializable {
     }
     def dockerLogin () {
         withCredentials([usernamePassword(credentialsId: 'DockerHub_Credientials', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-            script.sh "echo $script.PASS | docker login -u $script.USER --password-stdin"
+            script.sh "echo PASS | docker login -u USER --password-stdin"
         }
     }
     def dockerPush (String imageName) {
