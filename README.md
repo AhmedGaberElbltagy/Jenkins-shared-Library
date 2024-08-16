@@ -16,6 +16,7 @@ A Jenkins Shared Library is a powerful way to organize and reuse your Jenkins pi
 
 The shared library is structured as follows:
 
+```
 Jenkins-shared-library/
 ├── vars/
 │ ├── lintApp.groovy
@@ -28,6 +29,9 @@ Jenkins-shared-library/
 ├── src/
 │ └── com/example/Docker.groovy
 └── README.md
+```
+
+
 
 
 ### `vars` Folder
